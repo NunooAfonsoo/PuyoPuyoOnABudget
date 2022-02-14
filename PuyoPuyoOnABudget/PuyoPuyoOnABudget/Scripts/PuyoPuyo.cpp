@@ -62,7 +62,7 @@ void PuyoPuyo::RestartGame()
 	mainMenuEntites.clear();
 	gamePausedTextEntites.clear();
 	gamePausedEntites.clear();
-
+	SetGameScore(0);
 }
 
 
@@ -445,6 +445,11 @@ void PuyoPuyo::UpdateBallSetLeaders()
 int PuyoPuyo::GetGameScore()
 {
 	return gameScore;
+}
+
+void PuyoPuyo::SetGameScore(int score)
+{
+	gameScore = score;
 }
 
 

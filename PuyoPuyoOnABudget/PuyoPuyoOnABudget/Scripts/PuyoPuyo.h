@@ -72,6 +72,7 @@ class PuyoPuyo
 		void DeleteSetOfBalls(std::vector<Ball*> balls);
 		void AddToGameScore(int increment);
 		int GetGameScore();
+		void SetGameScore(int score);
 
 
 		void SetScoreText(Text* text);
